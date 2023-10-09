@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Projeto Firebase</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Bottom Navigate-->
+    <string name="bottom_navigation_home">Home</string>
+    <string name="bottom_navigation_profile">Perfil</string>
+    <string name="bottom_navigation_support">Suporte</string>
+
+    <!--Comuns -->
+    <string name="email_text">E-mail:</string>
+    <string name="email_hint">email@email.com</string>
+    <string name="password_text">Senha:</string>
+    <string name="password_hint">*********</string>
+    <string name="cpf_text">CPF:</string>
+    <string name="cpf_hint">999.999.999–99</string>
+
+    <!-- Tela de login-->
+    <string name="login_firebase_btn_enter_text">Entrar</string>
+    <string name="login_firebase_forgot_password_text">Esqueci a senha</string>
+    <string name="login_firebase_btn_dont_have_account_text">Não Tenho conta</string>
+
+    <!-- Tela de Recuperação de senha-->
+    <string name="recover_password_firebase_description_recover_password">Recupere sua senha digitando o email cadastrado abaixo. Você receberá um e-mail para criar uma nova senha.</string>
+    <string name="recover_password_firebase_recover_password_text">Recuperar senha</string>
+    <string name="recover_password_send_button_text">Enviar</string>
+
+    <!-- Tela de Criação de cadastro-->
+    <string name="register_firebase_btn_create_account_text">Criar Conta</string>
+    <string name="register_firebase_confirm_email_text">Confirme seu E-mail:</string>
+    <string name="register_firebase_invalid_cpf_text">Cpf invalido</string>
+    <string name="register_firebase_invalid_email_text">E-mail invalido</string>
+    <string name="register_firebase_emails_not_match_text">E-mails não conferem</string>
+    <string name="register_firebase_terms_and_conditions_text">Declaro que li e compreendi os termos e condições de uso.</string>
+    <string name="register_firebase_terms_and_conditions_dialog_text">É necessario concordar com os termos e condições de uso para se cadastrar </string>
+    <string name="register_firebase_user_name_text">Nome completo:</string>
+    <string name="register_firebase_user_name_hint">Seu nome completo</string>
+    <string name="register_firebase_error_register_account_creat_user_dialog_text"> Algum erro aconteceu ao cadastar seu usuario, verifique as informações inseridas!</string>
+    <string name="register_firebase_error_register_account_dialog_title">Falha ao cadastar</string>
+    <string name="register_firebase_tv_invalid_name_text">Digite seu nome</string>
+    <string name="register_firebase_birth_date_text">Data de Nascimento</string>
+    <string name="register_firebase_user_phone_text">Telefone</string>
+    <string name="register_firebase_btn_save_text">Salvar</string>
+
+    <!-- Tela de Alteração de  senha -->
+    <string name="change_password_current_password_text">Senha Atual:</string>
+    <string name="change_password_new_password_text">Nova senha:</string>
+    <string name="change_password_btn_change_passowd_text">Alterar Senha</string>
+    <string name="change_password_confirm_new_passowrd_text">Confirme sua senha</string>
+    <string name="change_password_password_not_match_text">As senhas não estão iguais</string>
+
+    <!-- Tela de perfil -->
+    <string name="profile_fragment_btn_update_profile_btn_text">Atualizar dados</string>
+
+    <!-- Tela de atualização de cadastro-->
+    <string name="update_profile_update_profile_data_btn_text">Atualizar dados</string>
+    <string name="update_profile_invalid_date_text">Data invalida</string>
+    <string name="change_password_incorrect_current_password_text">Senha atual incorreta</string>
+
+</resources>

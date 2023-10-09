@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1030011527579",
+    "project_id": "projeto-login-fb",
+    "storage_bucket": "projeto-login-fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030011527579:android:49f5a9662508f2027c813e",
+        "android_client_info": {
+          "package_name": "com.albuquerque.projetoFirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4xjv5_sG27TPlU9JbG55m5VVjklf0m-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

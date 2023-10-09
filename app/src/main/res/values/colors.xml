@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#01b0ef</color>
+    <color name="off_white">#FAFAFAFA</color>
+    <color name="cinza1">#9B9B9B</color>
+    <color name="cinza2">#5E5E5E</color>
+    <color name="cinza3">#393939</color>
+    <color name="primaria01">#03A4FF</color>
+    <color name="primaria02">#0061AE</color>
+    <color name="success">#52B788</color>
+    <color name="danger">#DE2400</color>
+    <color name="transparent">#00000000</color>
+    <color name="yellow">#FFD60A</color>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/menu_camera"
+        android:name="com.projetoFirebase.presentation.home.CameraFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/camera_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_profileFirebaseFragment"
+            app:destination="@id/menu_profile" />
+        <action
+            android:id="@+id/action_menu_camera_to_centralFragment"
+            app:destination="@id/menu_support" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFirebaseFragment"
+        android:name="com.projetoFirebase.presentation.loginFireBase.LoginFirebaseFragment"
+        android:label="login_firebase_fragment"
+        tools:layout="@layout/login_firebase_fragment" >
+        <action
+            android:id="@+id/action_loginFirebaseFragment_to_registerFirebaseFragment"
+            app:destination="@id/registerFirebaseFragment" />
+        <action
+            android:id="@+id/action_loginFirebaseFragment_to_recoverPasswordFirebaseFragment"
+            app:destination="@id/recoverPasswordFirebaseFragment" />
+        <action
+            android:id="@+id/action_loginFirebaseFragment_to_homeFragment"
+            app:destination="@id/menu_camera"
+            app:popUpTo="@id/loginFirebaseFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFirebaseFragment"
+        android:name="com.projetoFirebase.presentation.loginFireBase.RegisterFirebaseFragment"
+        android:label="register_firebase_fragment"
+        tools:layout="@layout/register_firebase_fragment" >
+        <action
+            android:id="@+id/action_registerFirebaseFragment_to_homeFragment"
+            app:destination="@id/menu_camera"
+            app:popUpTo="@id/registerFirebaseFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/recoverPasswordFirebaseFragment"
+        android:name="com.projetoFirebase.presentation.loginFireBase.RecoverPasswordFirebaseFragment"
+        android:label="recover_password_firebase_fragment"
+        tools:layout="@layout/recover_password_firebase_fragment" >
+        <action
+            android:id="@+id/action_recoverPasswordFirebaseFragment_to_loginFirebaseFragment"
+            app:destination="@id/loginFirebaseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.projetoFirebase.presentation.SplashFragment"
+        android:label="splash_fragment"
+        tools:layout="@layout/splash_fragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFirebaseFragment"
+            app:destination="@id/loginFirebaseFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/menu_camera"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu_profile"
+        android:name="com.projetoFirebase.presentation.profileFirebase.ProfileFirebaseFragment"
+        android:label="ProfileFirebaseFragment" >
+        <action
+            android:id="@+id/action_profileFirebaseFragment_to_changePasswordFirebaseFragment"
+            app:destination="@id/changePasswordFirebaseFragment" />
+        <action
+            android:id="@+id/action_profileFirebaseFragment_to_updateProfileFragment"
+            app:destination="@id/updateProfileFragment" />
+        <action
+            android:id="@+id/action_menu_profile_to_loginFirebaseFragment"
+            app:destination="@id/loginFirebaseFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/main_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFirebaseFragment"
+        android:name="com.projetoFirebase.presentation.profileFirebase.ChangePasswordFirebaseFragment"
+        android:label="ChangePasswordFirebaseFragment" >
+        <action
+            android:id="@+id/action_changePasswordFirebaseFragment_to_menu_profile"
+            app:destination="@id/menu_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateProfileFragment"
+        android:name="com.projetoFirebase.presentation.profileFirebase.UpdateProfileFragment"
+        android:label="UpdateProfileFragment" >
+        <action
+            android:id="@+id/action_updateProfileFragment_to_profileFirebaseFragment"
+            app:destination="@id/menu_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu_support"
+        android:name="com.projetoFirebase.presentation.home.SupportFragment"
+        android:label="central_fragment"
+        tools:layout="@layout/support_fragment" />
+</navigation>
