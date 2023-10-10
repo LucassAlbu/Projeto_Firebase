@@ -6,7 +6,7 @@
     app:startDestination="@id/splashFragment">
 
     <fragment
-        android:id="@+id/menu_camera"
+        android:id="@+id/menu_home"
         android:name="com.projetoFirebase.presentation.home.CameraFragment"
         android:label="home_fragment"
         tools:layout="@layout/camera_fragment" >
@@ -30,7 +30,7 @@
             app:destination="@id/recoverPasswordFirebaseFragment" />
         <action
             android:id="@+id/action_loginFirebaseFragment_to_homeFragment"
-            app:destination="@id/menu_camera"
+            app:destination="@id/menu_home"
             app:popUpTo="@id/loginFirebaseFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -41,7 +41,7 @@
         tools:layout="@layout/register_firebase_fragment" >
         <action
             android:id="@+id/action_registerFirebaseFragment_to_homeFragment"
-            app:destination="@id/menu_camera"
+            app:destination="@id/menu_home"
             app:popUpTo="@id/registerFirebaseFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -66,7 +66,7 @@
             app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_splashFragment_to_homeFragment"
-            app:destination="@id/menu_camera"
+            app:destination="@id/menu_home"
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true" />
     </fragment>

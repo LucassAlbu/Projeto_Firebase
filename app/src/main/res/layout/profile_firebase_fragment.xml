@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/off_white"
-    android:fillViewport="true"
-    tools:context=".presentation.loginFireBase.LoginFirebaseFragment">
+    android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -235,9 +234,8 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="32dp"
             android:backgroundTint="@color/primary"
             android:insetLeft="0dp"
             android:insetTop="0dp"
@@ -250,33 +248,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_change_password"
-            app:layout_constraintVertical_bias="0"
-            app:strokeColor="@color/black"
-            app:strokeWidth="1dp" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_logout"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="@color/primary"
-            android:insetLeft="0dp"
-            android:insetTop="0dp"
-            android:insetRight="0dp"
-            android:insetBottom="0dp"
-            android:text="Logout"
-            android:textStyle="bold"
-            app:cornerRadius="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintVertical_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_update_profile"
             app:strokeColor="@color/black"
             app:strokeWidth="1dp" />
 
@@ -285,8 +256,8 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
             android:backgroundTint="@color/primary"
             android:insetLeft="0dp"
             android:insetTop="0dp"
@@ -295,10 +266,10 @@
             android:text="@string/change_password_btn_change_passowd_text"
             android:textStyle="bold"
             app:cornerRadius="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_update_profile"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cd_cpf"
             app:strokeColor="@color/black"
             app:strokeWidth="1dp" />
 

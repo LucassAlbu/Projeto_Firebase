@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -66,10 +67,20 @@ class MainActivity : AppCompatActivity() {
     private fun setToolbarVisibility(toolbarVisibility: Boolean) {
         if (toolbarVisibility) {
             binding.toolbar.visible()
+            setLogoutToolbar()
         } else {
             binding.toolbar.gone()
         }
     }
+
+    private fun setLogoutToolbar() {
+
+        binding.btnLogout.setOnClickListener {
+            viewModel.logout()
+            findNavController(R.id.nav_host_fragment).navigate(R.id.loginFirebaseFragment)
+        }
+    }
+
 
     private fun setToolbarBackButtonVisibility(toolbarBackButtonVisibility: Boolean) {
         binding.toolbar.setNavigationIcon(R.drawable.ic_toolbar_back_arrow)
@@ -92,7 +103,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun changeStatusBarColorToDefault() {
 
-        window.statusBarColor = getColor(R.color.off_white)
+        window.statusBarColor = getColor(R.color.white)
     }
 
     private fun initObervables() {
