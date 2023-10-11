@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/off_white"
-    tools:context=".presentation.loginFireBase.LoginFirebaseFragment"
     android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -302,8 +300,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_terms_and_conditions"
             app:layout_constraintVertical_bias="0"
             app:strokeColor="@color/black"
-            app:strokeWidth="1dp"
-            />
+            app:strokeWidth="1dp" />
 
         <CheckBox
             android:id="@+id/checkbox"
@@ -338,7 +335,8 @@
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

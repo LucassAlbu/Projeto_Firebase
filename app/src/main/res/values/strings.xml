@@ -51,6 +51,7 @@
 
     <!-- Tela de perfil -->
     <string name="profile_fragment_btn_update_profile_btn_text">Atualizar dados</string>
+    <string name="profile_fragment_btn_logout">Logout</string>
 
     <!-- Tela de atualização de cadastro-->
     <string name="update_profile_update_profile_data_btn_text">Atualizar dados</string>

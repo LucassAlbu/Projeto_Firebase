@@ -109,8 +109,12 @@ class ProfileFirebaseFragment : Fragment() {
         binding.btnUpdateProfile.setOnClickListener {
             findNavController().navigate(R.id.action_profileFirebaseFragment_to_updateProfileFragment)
         }
+        binding.btnLogout.setOnClickListener {
+            viewModel.logout()
+            findNavController().navigate(R.id.action_menu_profile_to_loginFirebaseFragment)
+            uiStateManager(UIState.FireBaseLogout)
+        }
     }
-
 
 
     private fun initObservables() {

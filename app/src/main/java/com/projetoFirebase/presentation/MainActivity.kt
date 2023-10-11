@@ -67,20 +67,10 @@ class MainActivity : AppCompatActivity() {
     private fun setToolbarVisibility(toolbarVisibility: Boolean) {
         if (toolbarVisibility) {
             binding.toolbar.visible()
-            setLogoutToolbar()
         } else {
             binding.toolbar.gone()
         }
     }
-
-    private fun setLogoutToolbar() {
-
-        binding.btnLogout.setOnClickListener {
-            viewModel.logout()
-            findNavController(R.id.nav_host_fragment).navigate(R.id.loginFirebaseFragment)
-        }
-    }
-
 
     private fun setToolbarBackButtonVisibility(toolbarBackButtonVisibility: Boolean) {
         binding.toolbar.setNavigationIcon(R.drawable.ic_toolbar_back_arrow)
@@ -98,12 +88,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun changeStatusBarColorForSplashScreen() {
 
-        window.statusBarColor = getColor(R.color.primaria02)
+        window.statusBarColor = getColor(R.color.white)
     }
 
     private fun changeStatusBarColorToDefault() {
 
-        window.statusBarColor = getColor(R.color.white)
+        window.statusBarColor = getColor(R.color.primaria02)
     }
 
     private fun initObervables() {
@@ -112,9 +102,9 @@ class MainActivity : AppCompatActivity() {
             setBottomNavigateVisibility(it)
         }
 
-        viewModel.checkBottomNavigationItem.observe(this) {
-            setCheckableBottomNavigationItem(it)
-        }
+//        viewModel.checkBottomNavigationItem.observe(this) {
+//            setCheckableBottomNavigationItem(it)
+//        }
         viewModel.toolbarIsvisible.observe(this) {
             setToolbarVisibility(it)
         }

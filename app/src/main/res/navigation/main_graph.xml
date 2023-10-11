@@ -42,7 +42,7 @@
         <action
             android:id="@+id/action_registerFirebaseFragment_to_homeFragment"
             app:destination="@id/menu_home"
-            app:popUpTo="@id/registerFirebaseFragment"
+            app:popUpTo="@id/main_graph"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
@@ -83,7 +83,6 @@
         <action
             android:id="@+id/action_menu_profile_to_loginFirebaseFragment"
             app:destination="@id/loginFirebaseFragment"
-            app:launchSingleTop="true"
             app:popUpTo="@id/main_graph"
             app:popUpToInclusive="true" />
     </fragment>

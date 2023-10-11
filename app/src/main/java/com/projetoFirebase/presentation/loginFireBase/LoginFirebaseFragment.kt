@@ -38,7 +38,7 @@ class LoginFirebaseFragment : Fragment() {
         initClicks()
         initObservables()
         setBottomNavigate()
-        showStatusBar(true)
+        showStatusBar(false)
     }
 
     private fun validation() {
