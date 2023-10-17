@@ -6,12 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import com.albuquerque.projetoFirebase.databinding.CameraFragmentBinding
+import com.albuquerque.projetoFirebase.databinding.HomeFragmentBinding
 import com.projetoFirebase.presentation.MainViewModel
 
-class CameraFragment : Fragment() {
+class HomeFragment : Fragment() {
 
-    private var _binding: CameraFragmentBinding? = null
+    private var _binding: HomeFragmentBinding? = null
     private val binding get() = _binding!!
     private val viewModel: MainViewModel by activityViewModels()
 
@@ -21,7 +21,7 @@ class CameraFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = CameraFragmentBinding.inflate(inflater, container, false)
+        _binding = HomeFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -44,7 +44,7 @@ class CameraFragment : Fragment() {
 
     private fun setToolbar() {
         viewModel.toolbarVisibility(true)
-        viewModel.setToolbarTitleText("Cameras")
+        viewModel.setToolbarTitleText("Home")
         viewModel.toolbarBackButtonVisibility(false)
     }
 

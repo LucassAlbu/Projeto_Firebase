@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/menu_home"
-        android:name="com.projetoFirebase.presentation.home.CameraFragment"
+        android:name="com.projetoFirebase.presentation.home.HomeFragment"
         android:label="home_fragment"
-        tools:layout="@layout/camera_fragment" >
+        tools:layout="@layout/home_fragment" >
         <action
             android:id="@+id/action_homeFragment_to_profileFirebaseFragment"
             app:destination="@id/menu_profile" />
