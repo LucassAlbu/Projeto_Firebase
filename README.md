@@ -27,3 +27,6 @@ Basei o projeto no padrão Single Activity, pois além de garantir mais flexibil
 
 Para o controle de erros e estados de tela, utilizei os UiStates, pois é uma forma inteligente de, mapear, controlar e ditar o estado da Interface do Usuário (UI), de forma que podemos controlar eventos específicos em cada estado da tela, evitando falhas no app.
 
+### Mantedores
+Esse projeto é mantido por mim:
+- Lucas Da Silva Albuquerque
